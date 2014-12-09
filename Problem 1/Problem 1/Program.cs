@@ -12,9 +12,42 @@ namespace Problem_1
 
         //Find the sum of all the multiples of 3 or 5 below 1000.
 
-
-        static void Main(string[] args)
+        public static bool Multiple(int value, int divisor)
         {
+            // Is the value an exact multiple of the divisor?
+            var result = (value % divisor == 0) ? true : false;
+
+            return result;
+        }
+
+
+        public static int Iteration()
+        {
+            // Run through each integer
+            var upperLimit = 1000;
+
+            var sumOfMultiples = 0;
+
+            for (int i = 0; i < upperLimit; i++)
+            {
+                if (Multiple(i, 3) || Multiple(i, 5))
+                {
+                    sumOfMultiples += i;
+                }
+            }
+
+            return sumOfMultiples;
+        }
+
+
+        static void Main()
+        {
+
+            var sum = Iteration();
+
+            Console.WriteLine(string.Format("The sum of all multiples of 3 and 5 below 1000 is {0}", sum));
+            Console.ReadLine();
+
         }
     }
 }
