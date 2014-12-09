@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Problem_1
 {
@@ -42,10 +43,16 @@ namespace Problem_1
 
         static void Main()
         {
+            var watch = new Stopwatch();
+
+            watch.Start();
 
             var sum = Iteration();
 
-            Console.WriteLine(string.Format("The sum of all multiples of 3 and 5 below 1000 is {0}", sum));
+            watch.Stop();
+
+            Console.WriteLine(string.Format("The sum of all multiples of 3 and 5 below 1000 is {0}.", sum));
+            Console.WriteLine(string.Format("The time taken was {0}", watch.Elapsed));
             Console.ReadLine();
 
         }
