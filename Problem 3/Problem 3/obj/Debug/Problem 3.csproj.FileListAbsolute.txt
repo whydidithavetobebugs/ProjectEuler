@@ -1,1 +1,6 @@
 D:\Users\Joe\Documents\GitHub\ProjectEuler\Problem 3\Problem 3\bin\Debug\Problem 3.exe.config
+D:\Users\Joe\Documents\GitHub\ProjectEuler\Problem 3\Problem 3\bin\Debug\Problem 3.exe
+D:\Users\Joe\Documents\GitHub\ProjectEuler\Problem 3\Problem 3\bin\Debug\Problem 3.pdb
+D:\Users\Joe\Documents\GitHub\ProjectEuler\Problem 3\Problem 3\obj\Debug\Problem 3.csprojResolveAssemblyReference.cache
+D:\Users\Joe\Documents\GitHub\ProjectEuler\Problem 3\Problem 3\obj\Debug\Problem 3.exe
+D:\Users\Joe\Documents\GitHub\ProjectEuler\Problem 3\Problem 3\obj\Debug\Problem 3.pdb
