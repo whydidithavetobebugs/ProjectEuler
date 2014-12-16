@@ -12,8 +12,46 @@ namespace Problem_7
 
         //What is the 10,001st prime number?
 
+        public static bool IsPrime(long value)
+        {
+            for (long i = 2; i < (value / 2) + 1; i++)
+            {
+                if (value % i == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public static int Iteration()
+        {
+            var primeCounter = 2;
+
+            var integer = 3;
+
+            while (primeCounter < 10001)
+            {
+                integer++;
+
+                if (IsPrime(integer))
+                {
+                    primeCounter++;
+                }
+
+            }
+
+            return integer;
+        }
+
         static void Main(string[] args)
         {
+            var prime = Iteration();
+
+            Console.WriteLine(string.Format("The 10,001st prime number is {0}", prime));
+            Console.ReadLine();
+
         }
     }
 }
